@@ -1,0 +1,25 @@
+.container-addfrom {
+    
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // gap: 15px;
+    // flex: none;
+    // order: 0;
+    // flex-grow: 0;
+    // margin: 10px 10px;
+
+    .title-addfrom {
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .form-forcus-addfrom {
+
+        display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 20px;
+    row-gap: 27px;
+    }
+}

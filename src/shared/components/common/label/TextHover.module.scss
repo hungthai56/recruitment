@@ -1,0 +1,49 @@
+.text-red-priority {
+    color: #FF2C00;
+    padding-left: 5px;
+}
+
+:global {
+    .findx-text-label {
+        font-size: 14px;
+    }
+}
+
+.bg-content {
+    position: absolute;
+    top: -73%;
+    left: 12%;
+    transform: translateX(-50%);
+    padding: 8px;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--neutral-9, #131313);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+
+    .content {
+        max-width: 100%;
+        max-height: 200px;
+        color: var(--default-white, #FFF);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.144px;
+    }
+
+    .arrow-down {
+        position: absolute;
+        top: 81%;
+        /* Để arrow-down nằm dưới popup */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 6px;
+        height: 5px;
+        fill: var(--neutral-9, #131313);
+    }
+}

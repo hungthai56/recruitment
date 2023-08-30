@@ -1,0 +1,80 @@
+.findx-box {
+    background-color: #ffffff;
+    border-radius: 3px;
+
+    .findx-box-context {
+
+        padding: 20px;
+
+        .box-title {
+            display: flex;
+            gap: 8px;
+
+            .icon_drop {
+
+                width: 19px;
+                height: 17px;
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin-top: 4px;
+                transform: rotate(358deg);
+                cursor: pointer;
+                margin-right: 1px;
+            }
+            .text-red-priority{
+                color: #FF2C00;
+                padding-left: 5px;
+            }
+            
+            :global{
+                .findx-text-label{
+                    font-size: 14px;
+                }
+            }
+
+        }
+
+        .icon_drop.is_change {
+            margin-top: 4px;
+            transition: all 0.3s linear;
+
+        }
+
+        .box-content {
+            display: none;
+        }
+
+        .box-content.show {
+            margin-top: 20px;
+            display: block;
+        }
+
+        .titelbox_contexnt {
+            color: var(--neutral-7-icon, #707070);
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0.144px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.box_change_title{
+    display: flex;
+    column-gap: 8px;
+    cursor: pointer;
+}
+.roll_icon svg{
+    transform: rotateX(360deg);
+    transition:rotate 1s ease-in-out;
+}
+
+.none_roll_icon svg{
+    transform: rotateX(-180deg);
+    transition:rotate 1s ease-in-out;
+}

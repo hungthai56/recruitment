@@ -1,0 +1,17 @@
+.box-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    :global {
+        .form-online {
+            margin-bottom: 7px !important;
+        }
+
+        .form-item-upload {
+            display: flex;
+            flex-direction: column;
+            row-gap: 7px;
+        }
+    }
+}

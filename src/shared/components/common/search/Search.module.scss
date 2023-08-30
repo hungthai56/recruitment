@@ -1,0 +1,279 @@
+// @import "../../../Common.scss";
+
+#search {
+
+    // padding: 20px;
+    // margin: 10px;
+    // height: 72px;
+    // background: #FFFFFF;
+    // border-radius: 3px;
+    // box-sizing: border-box;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    .search_item_btn {
+        //     display: flex;
+        // flex-direction: row;
+        // column-gap: 20px;
+        // flex-wrap: nowrap !important;
+        // justify-content: space-between;
+        // width: 100%;
+        // margin-bottom: 0px;
+        // display: flex;
+        flex-direction: column;
+        gap: 10px;
+        display: flex;
+
+
+        .inputs_ {
+
+            display: flex;
+            width: 100%;
+            column-gap: 10px;
+            row-gap: 15px;
+            z-index: 2;
+
+            .search_input {
+                flex: 2 1 0%;
+            }
+
+
+        }
+
+        .inputs_chitiet {
+            float: right;
+        }
+
+        .action_btn {
+
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.012em;
+
+            // margin: 40px;
+            .btn-setup-reset {
+
+                width: 106px;
+                height: 32px;
+                box-sizing: border-box;
+                border: none;
+                background: #F2F2F2;
+                border-radius: 3px;
+                color: #707070;
+                cursor: pointer;
+                margin-right: 10px;
+                gap: 10px;
+
+                &:hover {
+                    background: #dddddd;
+                }
+            }
+
+
+
+            .btn-setting {
+                border: none;
+                width: 32px;
+                height: 32px;
+                background: #D2F2CC;
+                border-radius: 3px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 6px;
+                gap: 10px;
+                margin-right: 10px;
+
+                .icon_btn-setting {
+                    width: 20px;
+                    height: 20px;
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+
+                }
+
+                // &:hover {
+                //     background: #45be30;
+                // }
+                svg{
+                    color: #138300;
+                }
+            }
+
+            .btn-seedetail {
+                border: none;
+                width: 32px;
+                height: 32px;
+                border-radius: 3px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 6px;
+                background: #FFCD29;
+
+                .icon_btn-seedetail {
+                    width: 20px;
+                    height: 20px;
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                }
+
+                // &:hover {
+                //     background: #af9641;
+                // }
+            }
+
+            .btn_search_dropdow {
+                margin-right: 10px;
+                width: 112px;
+                height: 32px !important;
+                border-radius: 3px;
+                display: flex;
+                flex-direction: row;
+                border: none;
+
+                .btn-setup-seach {
+                    height: 32px;
+                    padding: 0px;
+                    font-weight: 500;
+                    min-width: 80px;
+                    border: none;
+                    height: 100%;
+                    outline: none;
+                    width: 78px;
+                    background-color: #138300;
+                    color: #ffffff;
+                    font-weight: 400;
+                    font-size: 14px;
+                    border-radius: 3px 0px 0px 3px;
+                    padding: 6px 10px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: #1aa601;
+                    }
+                }
+
+                .btn-setup-seach-dropdow {
+                    height: 32px;
+                    width: 32px;
+                    border: none;
+                    outline: none;
+                    height: 100%;
+                    width: 34px;
+                    background-color: #59a84c;
+                    padding: 4px 6px 6px;
+                    border-radius: 0px 3px 3px 0px;
+                    cursor: pointer;
+                    transition: all 0.3s linear;
+                    .is_change{
+                        transform: rotate(180deg);
+                        height: 23px;
+                   }
+                }
+                
+
+            }
+
+
+        }
+
+        .search_item_search {
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            flex-wrap: nowrap !important;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 0px;
+
+            .inputs_search_dropdow {
+                padding: 0px;
+                
+            }
+        }
+        .inputs_search_dropdow_show{
+            display: none;
+            width: 100%;
+            column-gap: 10px;
+            row-gap: 15px;
+            z-index: 2;
+        }
+        .inputs_search_dropdow_show.show{
+            display: flex;
+        }
+    }
+}
+
+#search_chitiet {
+    padding: 20px;
+    margin: 6px;
+    height: 72px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    box-sizing: border-box;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+
+    .inputs_chitiet {
+        float: right;
+    }
+
+    .action_btn {
+        display: flex;
+        height: 32px;
+
+        button {
+            cursor: pointer;
+
+            //  margin-left: 10px;
+            .icon_ {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    .btn-status-chitiet {
+        align-items: center;
+        border: none;
+        outline: none;
+        background-color: #ffffff;
+    }
+
+    .btn-reset-chitiet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        outline: none;
+        background-color: #ffffff;
+        width: "74px";
+        // margin-right: 10px;
+    }
+
+    .text-success {
+        list-style-type: none;
+        display: flex;
+        padding: 3px 9px;
+        height: 40px;
+        border: none;
+        color: #1aa601;
+    }
+
+    .text-danger {
+        list-style-type: none;
+        display: flex;
+        padding: 3px 5px;
+        height: 20px;
+        border: none;
+        color: #f80101;
+    }
+}

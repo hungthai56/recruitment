@@ -1,0 +1,82 @@
+.text-red-priority {
+    color: #FF2C00;
+    padding-left: 5px;
+}
+
+:global {
+    .findx-text-label {
+        font-size: 14px;
+    }
+}
+
+.text-iconInformation {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.icon-hover-box {
+    position: absolute;
+    bottom: 134%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+    padding: 8px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--neutral-9, #131313);
+
+    // Hiển thị khi hover vào biểu tượng
+    .text-iconInformation:hover & {
+        display: block;
+    }
+
+    .icon-text {
+        width: 132px;
+        color: var(--default-white, #FFF);
+        text-align: center;
+        /* Regular/Caption 1 - 12 - regular */
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        /* 133.333% */
+        letter-spacing: 0.144px;
+    }
+}
+
+.arrow-down {
+    font-size: 12px;
+    position: absolute;
+    top: 43px; // Điều chỉnh vị trí theo yêu cầu của bạn
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.custom__new-button {
+    position: relative;
+
+    span {
+        color: var(--default-white, #FFF);
+        text-align: right;
+        font-family: Roboto;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 3px;
+        background: var(--status-yellow, #F2CE13);
+        padding: 0px 4px;
+        position: absolute;
+        top: -5px;
+        right: -30px;
+    }
+
+}

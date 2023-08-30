@@ -1,0 +1,27 @@
+@import "Common.scss";
+
+.mainContainer_RCM{
+    background-color: #e5e5e5 !important;
+}
+
+
+.customSideBar_RCM {
+    background-color: #e5e5e5;
+    min-width: 1280px;
+    display: flex;
+    min-height: 100vh;
+    :global {
+       .MuiPaper-root.MuiPaper-elevation{
+           z-index: 1030;
+       }
+    }
+
+    :global {
+        .MuiTabs-flexContainer_RCM{
+            overflow-y: auto;
+        }
+    }
+    .layoutContentRight_RCM{
+        flex: 1;
+    }
+}

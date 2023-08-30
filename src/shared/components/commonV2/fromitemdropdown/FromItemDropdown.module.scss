@@ -1,0 +1,29 @@
+.dropitem-from{
+    flex: 1 1;
+    margin-right: 20px;
+.title-valied{
+    display: flex;
+    margin-bottom: 9px;
+    .title-item{
+        height: 20px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #333333;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    }
+    .valide-item{
+        color: #FF3434;
+    }
+}
+// .dropitem-from-con{
+//     margin-top: 8px;
+// }
+}

@@ -1,0 +1,100 @@
+.Detailrecruiters {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 50px;
+
+}
+
+.Search {
+    background: #FFFFFF;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+    .inputs_chitiet {
+        float: right;
+    }
+
+    .action_btn {
+        display: flex;
+        height: 32px;
+
+        button {
+            cursor: pointer;
+
+            //  margin-left: 10px;
+            .icon_ {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    .btn-status-chitiet {
+        align-items: center;
+        border: none;
+        outline: none;
+        background-color: #ffffff;
+    }
+
+    .btn-reset-chitiet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        outline: none;
+        background-color: #ffffff;
+        width: "74px";
+
+        // margin-right: 10px;
+        .text-again {
+            margin-top: 4px;
+            color: var(--neutral-8-text, #333);
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0.144px;
+        }
+    }
+
+    .text-success {
+        list-style-type: none;
+        display: flex;
+        // padding: 3px 9px;
+        height: 25px;
+        border: none;
+        // color: #1aa601;
+
+        color: var(--neutral-8-text, #333);
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.14px;
+    }
+
+    .text-danger {
+        list-style-type: none;
+        display: flex;
+        // padding: 3px 5px;
+        height: 20px;
+        border: none;
+        // color: #f80101;
+
+
+        color: var(--neutral-8-text, #333);
+        /* Regular/Body 2 - 14 - regular */
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        /* 142.857% */
+        letter-spacing: 0.14px;
+    }
+}
+
+// }

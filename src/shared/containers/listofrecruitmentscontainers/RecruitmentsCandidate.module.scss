@@ -1,0 +1,63 @@
+.box-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-bottom: 50px;
+
+    :global {
+        .form-online {
+            margin-bottom: 7px !important;
+        }
+
+        .form-item-upload{
+            display: flex;
+            flex-direction: column;
+            row-gap: 7px;
+        }
+    }
+}
+
+.text-public {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+    /* Other/link */
+
+    color: #0054E1;
+}
+
+.text-temp {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+    /* Other/link */
+
+    color: #333333;
+}
+.reset_btn {
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    width: 74px;
+    height: 16px;
+    margin-top: -3px;
+
+}
